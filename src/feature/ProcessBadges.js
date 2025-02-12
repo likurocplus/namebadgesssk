@@ -6,12 +6,12 @@ import NameBadgesDayOnly from "../components/NameBadgesDayOnly";
 import NameBadgesEvening from "../components/NameBadgesEvening";
 const processData = (data, badgesComponents) => {
     let index = 0;
-    for (let i = 0; i < Math.ceil(data.length / 8); i++) {
+    for (let i = 0; i < Math.ceil(data.length / 10); i++) {
         // 3.1 initialize tmparray to hold each chunk of 8 items
         const tmpArr = [];
     
         // 3.2 loop to gather 8 items, or until the end of the data array
-        for (let j = 0; j < 8 && index < data.length; j++) {
+        for (let j = 0; j < 10 && index < data.length; j++) {
           tmpArr.push({
             "First Name": data[index][0],
             "Last Name": data[index][1],
